@@ -1,0 +1,95 @@
+[LOG] [2023-11-27 21:36:28.915500]: UserID: 170852963 | Scenary: start | Event: VkBotEventType.MESSAGE_EVENT | Payload: ['directions']
+[LOG] [2023-11-27 21:36:31.169717]: UserID: 170852963 | Scenary: directions | Event: VkBotEventType.MESSAGE_NEW | Text: Подготовительная (1 класс)
+[LOG] [2023-11-27 21:36:32.358429]: UserID: 170852963 | Scenary: directions | Event: VkBotEventType.MESSAGE_NEW | Text: Байтик (2 класс)
+[LOG] [2023-11-27 21:36:33.439502]: UserID: 170852963 | Scenary: directions | Event: VkBotEventType.MESSAGE_NEW | Text: Инфомиры (3-4 класс)
+[LOG] [2023-11-27 21:36:34.640925]: UserID: 170852963 | Scenary: directions | Event: VkBotEventType.MESSAGE_EVENT | Payload: ['start']
+[LOG] [2023-11-27 21:36:37.777792]: UserID: 170852963 | Scenary: start | Event: VkBotEventType.MESSAGE_EVENT | Payload: ['faq']
+[LOG] [2023-11-27 21:36:59.454310]: UserID: 170852963 | Scenary: start | Event: VkBotEventType.MESSAGE_EVENT | Payload: ['directions']
+[LOG] [2023-11-27 21:37:02.507121]: UserID: 170852963 | Scenary: directions | Event: VkBotEventType.MESSAGE_EVENT | Payload: ['start']
+[LOG] [2023-11-27 21:44:27.048624]: UserID: 170852963 | Scenary: start | Event: VkBotEventType.MESSAGE_EVENT | Payload: ['directions']
+[LOG] [2023-11-27 21:44:29.221204]: UserID: 170852963 | Scenary: directions | Event: VkBotEventType.MESSAGE_EVENT | Payload: ['start']
+[LOG] [2023-11-27 21:47:28.626159]: UserID: 170852963 | Scenary: start | Event: VkBotEventType.MESSAGE_EVENT | Payload: ['faq']
+[LOG] [2023-11-27 21:47:46.011809]: UserID: 170852963 | Scenary: start | Event: VkBotEventType.MESSAGE_EVENT | Payload: ['faq']
+[LOG] [2023-11-27 21:53:13.809366]: UserID: 170852963 | Scenary: start | Event: VkBotEventType.MESSAGE_EVENT | Payload: ['directions']
+[LOG] [2023-11-27 21:53:16.111982]: UserID: 170852963 | Scenary: directions | Event: VkBotEventType.MESSAGE_EVENT | Payload: ['start']
+[LOG] [2023-11-27 21:59:47.635171]: UserID: 170852963 | Scenary: start | Event: VkBotEventType.MESSAGE_EVENT | Payload: ['directions']
+[LOG] [2023-11-27 21:59:49.588432]: UserID: 170852963 | Scenary: directions | Event: VkBotEventType.MESSAGE_NEW | Text: Инфостарт (5-7 класс)
+[LOG] [2023-11-27 21:59:50.711228]: UserID: 170852963 | Scenary: directions | Event: VkBotEventType.MESSAGE_NEW | Text: Инфомиры (3-4 класс)
+[LOG] [2023-11-27 21:59:51.593382]: UserID: 170852963 | Scenary: directions | Event: VkBotEventType.MESSAGE_EVENT | Payload: ['start']
+[LOG] [2023-11-27 21:59:53.801018]: UserID: 170852963 | Scenary: start | Event: VkBotEventType.MESSAGE_EVENT | Payload: ['faq']
+[LOG] [2023-11-27 22:00:06.417610]: UserID: 170852963 | Scenary: start | Event: VkBotEventType.MESSAGE_EVENT | Payload: ['directions']
+[LOG] [2023-11-27 22:00:10.397540]: UserID: 170852963 | Scenary: directions | Event: VkBotEventType.MESSAGE_NEW | Text: Инфостарт (5-7 класс)
+[LOG] [2023-11-27 22:00:11.285207]: UserID: 170852963 | Scenary: directions | Event: VkBotEventType.MESSAGE_EVENT | Payload: ['start']
+[LOG] [2023-11-27 22:04:30.511957]: UserID: 170852963 | Scenary: start | Event: VkBotEventType.MESSAGE_EVENT | Payload: ['directions']
+[LOG] [2023-11-27 22:04:35.823795]: UserID: 170852963 | Scenary: directions | Event: VkBotEventType.MESSAGE_NEW | Text: Подготовительная (1 класс)
+[LOG] [2023-11-27 22:04:36.831617]: UserID: 170852963 | Scenary: directions | Event: VkBotEventType.MESSAGE_NEW | Text: Байтик (2 класс)
+[LOG] [2023-11-27 22:04:40.585279]: UserID: 170852963 | Scenary: directions | Event: VkBotEventType.MESSAGE_NEW | Text: Инфомиры (3-4 класс)
+[LOG] [2023-11-27 22:04:41.557426]: UserID: 170852963 | Scenary: directions | Event: VkBotEventType.MESSAGE_EVENT | Payload: ['start']
+[LOG] [2023-11-27 22:11:57.188717]: UserID: 170852963 | Scenary: start | Event: VkBotEventType.MESSAGE_EVENT | Payload: ['directions']
+[LOG] [2023-11-27 22:17:10.995909]: UserID: 170852963 | Scenary: start | Event: VkBotEventType.MESSAGE_EVENT | Payload: ['directions']
+[LOG] [2023-11-27 22:18:28.486763]: UserID: 170852963 | Scenary: start | Event: VkBotEventType.MESSAGE_EVENT | Payload: ['faq']
+[LOG] [2023-11-27 22:20:45.712040]: UserID: 170852963 | Scenary: start | Event: VkBotEventType.MESSAGE_EVENT | Payload: ['faq']
+[LOG] [2023-11-27 22:38:56.126621]: UserID: 170852963 | Scenary: start | Event: VkBotEventType.MESSAGE_EVENT | Payload: ['directions']
+[LOG] [2023-11-27 22:43:28.144666]: UserID: 170852963 | Scenary: directions | Event: VkBotEventType.MESSAGE_EVENT | Payload: ['directions']
+[LOG] [2023-11-27 22:43:34.877628]: UserID: 170852963 | Scenary: directions | Event: VkBotEventType.MESSAGE_EVENT | Payload: ['start']
+[LOG] [2023-11-27 22:43:36.531135]: UserID: 170852963 | Scenary: start | Event: VkBotEventType.MESSAGE_EVENT | Payload: ['faq']
+[LOG] [2023-11-27 22:43:42.477516]: UserID: 170852963 | Scenary: start | Event: VkBotEventType.MESSAGE_EVENT | Payload: ['directions']
+[LOG] [2023-11-27 22:43:45.614125]: UserID: 170852963 | Scenary: directions | Event: VkBotEventType.MESSAGE_NEW | Text: Байтик (2 класс)
+[LOG] [2023-11-27 22:43:46.666338]: UserID: 170852963 | Scenary: directions | Event: VkBotEventType.MESSAGE_NEW | Text: Подготовительная (1 класс)
+[LOG] [2023-11-27 22:43:47.790629]: UserID: 170852963 | Scenary: directions | Event: VkBotEventType.MESSAGE_NEW | Text: Инфостарт (5-7 класс)
+[LOG] [2023-11-27 22:43:49.108109]: UserID: 170852963 | Scenary: directions | Event: VkBotEventType.MESSAGE_EVENT | Payload: ['start']
+[LOG] [2023-11-27 22:46:43.837637]: UserID: 170852963 | Scenary: start | Event: VkBotEventType.MESSAGE_EVENT | Payload: ['directions']
+[LOG] [2023-11-27 22:46:46.633255]: UserID: 170852963 | Scenary: directions | Event: VkBotEventType.MESSAGE_EVENT | Payload: ['start']
+[LOG] [2023-11-27 22:46:57.220237]: UserID: 170852963 | Scenary: start | Event: VkBotEventType.MESSAGE_EVENT | Payload: ['faq']
+[LOG] [2023-11-27 22:47:23.117259]: UserID: 170852963 | Scenary: start | Event: VkBotEventType.MESSAGE_EVENT | Payload: ['faq']
+[LOG] [2023-11-27 22:47:35.633792]: UserID: 170852963 | Scenary: start | Event: VkBotEventType.MESSAGE_EVENT | Payload: ['directions']
+[LOG] [2023-11-27 22:47:37.714821]: UserID: 170852963 | Scenary: directions | Event: VkBotEventType.MESSAGE_NEW | Text: Подготовительная (1 класс)
+[LOG] [2023-11-27 22:47:38.817085]: UserID: 170852963 | Scenary: directions | Event: VkBotEventType.MESSAGE_NEW | Text: Байтик (2 класс)
+[LOG] [2023-11-27 22:47:40.056286]: UserID: 170852963 | Scenary: directions | Event: VkBotEventType.MESSAGE_NEW | Text: Инфомиры (3-4 класс)
+[LOG] [2023-11-27 22:47:40.925250]: UserID: 170852963 | Scenary: directions | Event: VkBotEventType.MESSAGE_EVENT | Payload: ['start']
+[LOG] [2023-11-27 22:47:43.332676]: UserID: 170852963 | Scenary: start | Event: VkBotEventType.MESSAGE_EVENT | Payload: ['faq']
+[LOG] [2023-11-27 22:47:48.473708]: UserID: 170852963 | Scenary: start | Event: VkBotEventType.MESSAGE_EVENT | Payload: ['directions']
+[LOG] [2023-11-27 22:48:24.036293]: UserID: 170852963 | Scenary: directions | Event: VkBotEventType.MESSAGE_NEW | Text: Байтик (2 класс)
+[LOG] [2023-11-27 22:48:57.504617]: UserID: 170852963 | Scenary: directions | Event: VkBotEventType.MESSAGE_NEW | Text: Байтик (2 класс)
+[LOG] [2023-11-27 22:51:35.402862]: UserID: 170852963 | Scenary: start | Event: VkBotEventType.MESSAGE_EVENT | Payload: ['directions']
+[LOG] [2023-11-27 22:51:37.225399]: UserID: 170852963 | Scenary: directions | Event: VkBotEventType.MESSAGE_NEW | Text: Байтик (2 класс)
+[LOG] [2023-11-27 22:51:38.805448]: UserID: 170852963 | Scenary: directions | Event: VkBotEventType.MESSAGE_NEW | Text: Инфомиры (3-4 класс)
+[LOG] [2023-11-27 22:51:39.740440]: UserID: 170852963 | Scenary: directions | Event: VkBotEventType.MESSAGE_EVENT | Payload: ['start']
+[LOG] [2023-11-27 22:51:49.335059]: UserID: 170852963 | Scenary: start | Event: VkBotEventType.MESSAGE_EVENT | Payload: ['start']
+[LOG] [2023-11-27 22:56:35.830334]: UserID: 170852963 | Scenary: start | Event: VkBotEventType.MESSAGE_NEW | Text: Подготовительная (1 класс)
+[LOG] [2023-11-27 22:57:51.759745]: UserID: 170852963 | Scenary: start | Event: VkBotEventType.MESSAGE_EVENT | Payload: ['start']
+[LOG] [2023-11-27 22:58:25.181956]: UserID: 170852963 | Scenary: start | Event: VkBotEventType.MESSAGE_EVENT | Payload: ['directions']
+[LOG] [2023-11-27 22:58:27.522911]: UserID: 170852963 | Scenary: directions | Event: VkBotEventType.MESSAGE_NEW | Text: Подготовительная (1 класс)
+[LOG] [2023-11-27 22:58:28.981028]: UserID: 170852963 | Scenary: directions | Event: VkBotEventType.MESSAGE_NEW | Text: Байтик (2 класс)
+[LOG] [2023-11-27 22:58:30.148973]: UserID: 170852963 | Scenary: directions | Event: VkBotEventType.MESSAGE_EVENT | Payload: ['start']
+[LOG] [2023-11-27 22:58:31.652737]: UserID: 170852963 | Scenary: start | Event: VkBotEventType.MESSAGE_EVENT | Payload: ['faq']
+[LOG] [2023-11-27 22:58:39.021081]: UserID: 170852963 | Scenary: start | Event: VkBotEventType.MESSAGE_EVENT | Payload: ['directions']
+[LOG] [2023-11-27 22:59:34.255115]: UserID: 170852963 | Scenary: directions | Event: VkBotEventType.MESSAGE_EVENT | Payload: ['faq']
+[LOG] [2023-11-27 22:59:50.993051]: UserID: 170852963 | Scenary: start | Event: VkBotEventType.MESSAGE_EVENT | Payload: ['directions']
+[LOG] [2023-11-27 22:59:53.745981]: UserID: 170852963 | Scenary: directions | Event: VkBotEventType.MESSAGE_NEW | Text: Подготовительная (1 класс)
+[LOG] [2023-11-27 22:59:54.917642]: UserID: 170852963 | Scenary: directions | Event: VkBotEventType.MESSAGE_NEW | Text: Байтик (2 класс)
+[LOG] [2023-11-27 22:59:56.224205]: UserID: 170852963 | Scenary: directions | Event: VkBotEventType.MESSAGE_EVENT | Payload: ['start']
+[LOG] [2023-11-27 23:00:39.610629]: UserID: 170852963 | Scenary: start | Event: VkBotEventType.MESSAGE_EVENT | Payload: ['directions']
+[LOG] [2023-11-27 23:00:42.026394]: UserID: 170852963 | Scenary: directions | Event: VkBotEventType.MESSAGE_EVENT | Payload: ['start']
+[LOG] [2023-11-27 23:00:46.627069]: UserID: 170852963 | Scenary: start | Event: VkBotEventType.MESSAGE_EVENT | Payload: ['directions']
+[LOG] [2023-11-27 23:00:49.823498]: UserID: 170852963 | Scenary: directions | Event: VkBotEventType.MESSAGE_EVENT | Payload: ['start']
+[LOG] [2023-11-27 23:00:53.827460]: UserID: 170852963 | Scenary: start | Event: VkBotEventType.MESSAGE_EVENT | Payload: ['faq']
+[LOG] [2023-11-27 23:01:12.313130]: UserID: 170852963 | Scenary: start | Event: VkBotEventType.MESSAGE_EVENT | Payload: ['directions']
+[LOG] [2023-11-27 23:01:14.944298]: UserID: 170852963 | Scenary: directions | Event: VkBotEventType.MESSAGE_EVENT | Payload: ['start']
+[LOG] [2023-11-27 23:01:17.173166]: UserID: 170852963 | Scenary: start | Event: VkBotEventType.MESSAGE_EVENT | Payload: ['directions']
+[LOG] [2023-11-27 23:01:19.452179]: UserID: 170852963 | Scenary: directions | Event: VkBotEventType.MESSAGE_EVENT | Payload: ['start']
+[LOG] [2023-11-27 23:01:21.005699]: UserID: 170852963 | Scenary: start | Event: VkBotEventType.MESSAGE_EVENT | Payload: ['faq']
+[LOG] [2023-11-27 23:01:27.139851]: UserID: 170852963 | Scenary: start | Event: VkBotEventType.MESSAGE_EVENT | Payload: ['directions']
+[LOG] [2023-11-27 23:01:30.082517]: UserID: 170852963 | Scenary: directions | Event: VkBotEventType.MESSAGE_NEW | Text: Подготовительная (1 класс)
+[LOG] [2023-11-27 23:01:30.567221]: UserID: 170852963 | Scenary: directions | Event: VkBotEventType.MESSAGE_NEW | Text: Подготовительная (1 класс)
+[LOG] [2023-11-27 23:01:31.248961]: UserID: 170852963 | Scenary: directions | Event: VkBotEventType.MESSAGE_NEW | Text: Подготовительная (1 класс)
+[LOG] [2023-11-27 23:01:31.763336]: UserID: 170852963 | Scenary: directions | Event: VkBotEventType.MESSAGE_NEW | Text: Подготовительная (1 класс)
+[LOG] [2023-11-27 23:01:32.081487]: UserID: 170852963 | Scenary: directions | Event: VkBotEventType.MESSAGE_NEW | Text: Подготовительная (1 класс)
+[LOG] [2023-11-27 23:02:01.594447]: UserID: 170852963 | Scenary: directions | Event: VkBotEventType.MESSAGE_NEW | Text: Байтик (2 класс)
+[LOG] [2023-11-27 23:02:01.990897]: UserID: 170852963 | Scenary: directions | Event: VkBotEventType.MESSAGE_NEW | Text: Байтик (2 класс)
+[LOG] [2023-11-27 23:02:03.061601]: UserID: 170852963 | Scenary: directions | Event: VkBotEventType.MESSAGE_NEW | Text: Байтик (2 класс)
+[LOG] [2023-11-27 23:02:03.791685]: UserID: 170852963 | Scenary: directions | Event: VkBotEventType.MESSAGE_NEW | Text: Байтик (2 класс)
+[LOG] [2023-11-27 23:02:15.017750]: UserID: 170852963 | Scenary: directions | Event: VkBotEventType.MESSAGE_EVENT | Payload: ['start']
+[LOG] [2023-11-27 23:12:39.203848]: UserID: 170852963 | Scenary: start | Event: VkBotEventType.MESSAGE_EVENT | Payload: ['directions']
+[LOG] [2023-11-27 23:13:04.412450]: UserID: 170852963 | Scenary: start | Event: VkBotEventType.MESSAGE_EVENT | Payload: ['directions']
+[LOG] [2023-11-27 23:13:16.795996]: UserID: 170852963 | Scenary: directions | Event: VkBotEventType.MESSAGE_EVENT | Payload: ['start']
