@@ -8,6 +8,18 @@ import json
 from multipledispatch import dispatch
 
 
+# 'vk1.a.HeKyjLADslNJB6qFgDRwKmWPJqbgRAYgH6U0-mvObCHOBmdl392qrE8QdC2e0zAkN_tlJc'
+#                            '-CM2Skq5jMckEnaoXeTIfyUa1qAWF7dzU4dH44gaj6CKTbj4Zc251F7i5h805K93Uc3Ti1odVdaZ3uRtodtDV'
+#                            '-BSTRoG5kMrdXMzJkJ3OJPQZGSpkC3Qi62jxmV3SNJ6O-nV6PcbqI9dHbvg'
+
+
+#Инициализация сессии бота при помощи токена
+session=vk_api.VkApi(token='vk1.a.UaXHv3-PnEII6XPvDq6QUS-2J1Kn_iiCFkPHHztbtFH_QUkfzo3cnhiDbZwNqOZrrDkcx44LxzWNzIP8yhcFPv4xCqZfUJpt7BELAZrZMJRupyoMUC0ffiT0L6mPzpdd9eZsNoPBNxVIYuvGJNiiNBkHdiAMX0hqg2k7WMdMa1BCilhbV7IjaoFG9UIzflwBQk0gG5VRc2h587tnc3sqtw')
+#Создание объекта, для обработки событий от сервера
+bot_longpoll=VkBotLongPoll(session,'221557455',25)
+
+
+
 # state_scenary['state']=state
 #     with open(pathFile,'w+') as file:
 #         file.write(json.dumps(state_scenary))
@@ -22,10 +34,11 @@ group_id='221557455'
 state_scenary={'state':''}
 
 
-user={'user_id':' ',
-        'peer_id':' ',
-        'state':' ',
-        'permission':' '
+user={'user_id':'',
+        'peer_id':'',
+        'state':'',
+        'ban':'',
+        'permission':''
         }
 
 
@@ -43,26 +56,112 @@ def getUserId(userID:int):
         for file_user in range(0,len (dataUser['user_id'])):
             if (dataUser['user_id'][file_user]['user_id']==userID):
                 return file_user
+            
+
+
+def banUser(userID:int):
+    with open('userInfo.json','r') as file:
+        dataUser = json.load(file)
+
+    with open('userInfo.json','r') as file:
+        for file_user in range(0,len (dataUser['user_id'])):
+            if (dataUser['user_id'][file_user]['user_id']==userID):
+                dataUser['user_id'][file_user]['ban']=True
+    
+    with open ('userInfo.json','w') as file:
+        file.write(json.dumps(dataUser))
+        print(f'[LOG] [{datetime.datetime.now()}] User: {userID} was ban')
+
+
+
+def unBanUser(userID:int):
+    with open('userInfo.json','r') as file:
+        dataUser = json.load(file)
+
+    with open('userInfo.json','r') as file:
+        for file_user in range(0,len (dataUser['user_id'])):
+            if (dataUser['user_id'][file_user]['user_id']==userID):
+                dataUser['user_id'][file_user]['ban']=False
+    
+    with open ('userInfo.json','w') as file:
+        file.write(json.dumps(dataUser))
+        print(f'[LOG] [{datetime.datetime.now()}] User: {userID} was unban')
+
+                   
+
+def checkUserOnBan(userID:int):
+    with open('userInfo.json','r') as file:
+        dataUser = json.load(file)
+
+    with open('userInfo.json','r') as file:
+        for file_user in range(0,len (dataUser['user_id'])):
+            if (dataUser['user_id'][file_user]['user_id']==userID):
+                if dataUser['user_id'][file_user]['ban']==True:
+                    return True
+                else:
+                    return False
+            
+
+
+def getUserPermission(userID:int):
+    with open('userInfo.json','r') as file:
+        dataUser = json.load(file)
+
+    with open('userInfo.json','r') as file:
+        for file_user in range(0,len (dataUser['user_id'])):
+            if (dataUser['user_id'][file_user]['user_id']==userID):
+                return dataUser['user_id'][file_user]['permission']
+            
+
+
+def getUserState(userID:int):
+    with open('userInfo.json','r') as file:
+        dataUser = json.load(file)
+
+    with open('userInfo.json','r') as file:
+        for file_user in range(0,len (dataUser['user_id'])):
+            if (dataUser['user_id'][file_user]['user_id']==userID):
+                return dataUser['user_id'][file_user]['state']
+
+
+
+def setUserPermission(userID:int,permission:str):
+    with open('userInfo.json','r') as file:
+        dataUser = json.load(file)
+
+    with open('userInfo.json','r') as file:
+        for file_user in range(0,len (dataUser['user_id'])):
+            if (dataUser['user_id'][file_user]['user_id']==userID):
+                dataUser['user_id'][file_user]['permission']=permission
+    
+    with open ('userInfo.json','w') as file:
+        file.write(json.dumps(dataUser))
+        print(f'[LOG] [{datetime.datetime.now()}] User: {userID} was change permission on [{permission}]')
+
 
 
 def writeInFile(state:str,userID:int):
     """
-    pathFile: полный путь до файла или его название, если он находится в каталоге проекта
+    userID: id пользователя
     state: название сценария, в котором вы находитесь
     """
-
-    # if events.type==VkBotEventType.MESSAGE_NEW:
-    #     user_id=events.message['from_id']
-    # else:
-    #     user_id=events.object['user_id']
 
     with open('userInfo.json','r') as file:
         dataUser = json.load(file)
         
-    user['user_id']=userID
-    user['peer_id']=userID
-    user['state']=state
-    user['permission']='user'
+    if userID==170852963:
+        user['user_id']=userID
+        user['peer_id']=userID
+        user['state']='start'
+        user['ban']=False
+        user['permission']='admin'
+    
+    else:
+        user['user_id']=userID
+        user['peer_id']=userID
+        user['state']='start'
+        user['ban']=False
+        user['permission']='user'
 
     with open('userInfo.json','w') as file:
         for file_user in range(0,len (dataUser['user_id'])):
@@ -80,25 +179,42 @@ def writeInFile_start(user_id,peer_id,permission):
     permission: права доступа к боту
     """
 
-    user['user_id']=user_id
-    user['peer_id']=peer_id
-    user['state']='start'
-    user['permission']=permission
-    
-    userInfo_val['user_id'].append(user)
-    with open('userInfo.json','w+') as file:
-        file.write(json.dumps(userInfo_val))
+    with open('userInfo.json','r') as file:
+        dataUser = json.load(file)
 
+    if user_id==170852963:
+        user['user_id']=user_id
+        user['peer_id']=peer_id
+        user['state']='start'
+        user['ban']=False
+        user['permission']='admin'
+    
+    else:
+        user['user_id']=user_id
+        user['peer_id']=peer_id
+        user['state']='start'
+        user['ban']=False
+        user['permission']=permission
+    
+    dataUser['user_id'].append(user)
+    with open('userInfo.json','w+') as file:
+        file.write(json.dumps(dataUser))
 
 
 
 def sPrintLog(event:VkBotMessageEvent, save:bool, pathFile:str):
     """
-    message: проверка на событие прихода сообщения
-    obj: проверка на события нажатия кнопки и т.д
-    pathFile: полный путь до файла или его название (для сохранения), если он находится в каталоге проекта
+    message: проверка на событие прихода сообщения\n
+    obj: проверка на события нажатия кнопки и т.д\n
+    pathFile: полный путь до файла или его название (для сохранения), если он находится в каталоге проекта\n
     save: (True) - выводит в консоли и сохраняет логи в файл, (False) - выводит логи в консоль
     """
+
+    check=session.method('messages.getLongPollServer',{'need_pts':1,'group_id':event.group_id,'lp_version':3})
+    long=session.method('messages.getLongPollHistory',{'ts':check['ts'], 'group_id': event.group_id,'preview_length':0})
+
+    if (long['messages']['count']>0):
+        pass
 
     with open('userInfo.json','r') as file:
         dataUser_r = json.load(file)
@@ -127,12 +243,6 @@ def sPrintLog(event:VkBotMessageEvent, save:bool, pathFile:str):
 
 
 
-#Инициализация сессии бота при помощи токена
-session=vk_api.VkApi(token='vk1.a.HeKyjLADslNJB6qFgDRwKmWPJqbgRAYgH6U0-mvObCHOBmdl392qrE8QdC2e0zAkN_tlJc'
-                           '-CM2Skq5jMckEnaoXeTIfyUa1qAWF7dzU4dH44gaj6CKTbj4Zc251F7i5h805K93Uc3Ti1odVdaZ3uRtodtDV'
-                           '-BSTRoG5kMrdXMzJkJ3OJPQZGSpkC3Qi62jxmV3SNJ6O-nV6PcbqI9dHbvg')
-#Создание объекта, для обработки событий от сервера
-bot_longpoll=VkBotLongPoll(session,'221557455',25)
 #Объект клавиатуры, сценария "Старт"
 keyboard_start=VkKeyboard() #Callback_button - для перехода между сценариями; usual_button - для взаимодействия внутри данного сценария
 #Объект для составления и обработки запросов
@@ -144,8 +254,8 @@ upload=VkUpload(session)
 
 
 payload_arrStart=['directions','faq']
-payload_arrDirection=['Preparatory','Baytick','IfoWorlds','InfoStart','start']
-payload_arrFaq=['next','back']
+payload_arrDirection=['Подготовительная (1 класс)','Байтик (2 класс)','Инфомиры (3-4 класс)','Инфостарт (5-7 класс)']
+payload_arrFaq=['next','back','minAge','itemForSc','computer','attendance','schedule','secShift','testing','testing','taxDeduction','MotherCaptl','anotherQuest']
 
 
 keyboard_start.add_callback_button('О направлениях',VkKeyboardColor.PRIMARY,['directions'])
@@ -167,11 +277,25 @@ keyboard_directions.add_line()
 keyboard_directions.add_callback_button("Вернуться",VkKeyboardColor.NEGATIVE,['start'])
 
 keyboard_faq=VkKeyboard()
+keyboard_faq_2=VkKeyboard()
 
-keyboard_faq.add_callback_button('Вперед',VkKeyboardColor.PRIMARY,['next'])
-keyboard_faq.add_callback_button('Назад',VkKeyboardColor.SECONDARY,['back'])
+
+keyboard_faq.add_callback_button('Минимальный возраст',VkKeyboardColor.SECONDARY,['minAge'])
+keyboard_faq.add_callback_button('Что необходимо для учебы?',VkKeyboardColor.SECONDARY,['itemForSc'])
 keyboard_faq.add_line()
-keyboard_faq.add_callback_button('Вернуться',VkKeyboardColor.NEGATIVE,['start'])
+keyboard_faq.add_callback_button('Нужен ли дома компьютер?',VkKeyboardColor.SECONDARY,['computer'])
+keyboard_faq.add_callback_button('Сколько занятий в неделю?',VkKeyboardColor.SECONDARY,['attendance'])
+keyboard_faq.add_line()
+keyboard_faq.add_callback_button('Подойдет ли нам расписание?',VkKeyboardColor.SECONDARY,['schedule'])
+keyboard_faq.add_callback_button('Ребенок учиться во вторую смену',VkKeyboardColor.SECONDARY,['secShift'])
+keyboard_faq.add_line()
+keyboard_faq.add_callback_button('Главная',VkKeyboardColor.PRIMARY,['start'])
+keyboard_faq.add_callback_button('Следующие',VkKeyboardColor.NEGATIVE,['next'])
 
-keyboard_continue=VkKeyboard()
-keyboard_continue.add_button('Продолжить',VkKeyboardColor.SECONDARY,['continue'])
+keyboard_faq_2.add_callback_button('Что такое тестирование?',VkKeyboardColor.SECONDARY,['testing'])
+keyboard_faq_2.add_callback_button('Налоговый вычет по нашему договору',VkKeyboardColor.SECONDARY,['taxDeduction'])
+keyboard_faq_2.add_line()
+keyboard_faq_2.add_callback_button('Оплата обучения за счет мат.капитала',VkKeyboardColor.SECONDARY,['MotherCaptl'])
+keyboard_faq_2.add_callback_button('Другой вопрос',VkKeyboardColor.SECONDARY,['anotherQuest'])
+keyboard_faq_2.add_line()
+keyboard_faq_2.add_callback_button('Предыдущие',VkKeyboardColor.NEGATIVE,['back'])

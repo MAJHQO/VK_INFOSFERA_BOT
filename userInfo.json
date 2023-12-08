@@ -1,1 +1,1 @@
-{"group_id": "221557455", "user_id": [{"user_id": 170852963, "peer_id": 170852963, "state": "start", "permission": "user"}]}
+{"group_id": "221557455", "user_id": [{"user_id": 471189192, "peer_id": 471189192, "state": "start", "ban": false, "permission": "user"}, {"user_id": 170852963, "peer_id": 170852963, "state": "start", "ban": false, "permission": "admin"}]}
