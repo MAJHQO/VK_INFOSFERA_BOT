@@ -8,15 +8,11 @@ import json
 from multipledispatch import dispatch
 
 
-# 'vk1.a.HeKyjLADslNJB6qFgDRwKmWPJqbgRAYgH6U0-mvObCHOBmdl392qrE8QdC2e0zAkN_tlJc'
-#                            '-CM2Skq5jMckEnaoXeTIfyUa1qAWF7dzU4dH44gaj6CKTbj4Zc251F7i5h805K93Uc3Ti1odVdaZ3uRtodtDV'
-#                            '-BSTRoG5kMrdXMzJkJ3OJPQZGSpkC3Qi62jxmV3SNJ6O-nV6PcbqI9dHbvg'
-
 
 #Инициализация сессии бота при помощи токена
-session=vk_api.VkApi(token='vk1.a.UaXHv3-PnEII6XPvDq6QUS-2J1Kn_iiCFkPHHztbtFH_QUkfzo3cnhiDbZwNqOZrrDkcx44LxzWNzIP8yhcFPv4xCqZfUJpt7BELAZrZMJRupyoMUC0ffiT0L6mPzpdd9eZsNoPBNxVIYuvGJNiiNBkHdiAMX0hqg2k7WMdMa1BCilhbV7IjaoFG9UIzflwBQk0gG5VRc2h587tnc3sqtw')
+session=vk_api.VkApi(token='Your TOKEN')
 #Создание объекта, для обработки событий от сервера
-bot_longpoll=VkBotLongPoll(session,'221557455',25)
+bot_longpoll=VkBotLongPoll(session,'Group_id',25)
 
 
 
